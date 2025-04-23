@@ -1,16 +1,29 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import {useNavigate} from "react-router-dom";
+
 import Signup from "./Signup";
 import ShowFlash from "../ShowFlash";
 
 function SignupParent() {
   let [flashData, setFlashData] = useState(null);
-
+  const navigate = useNavigate();
+  
   const handleFlashContent = (data) => {
     
-    console.log({...data, id:Date.now()});
     setFlashData({...data, id:Date.now()});
   };
+
+  useEffect(() => {
+    if (flashData?.type==="success") {
+      const timeout = setTimeout(() => {
+       
+        navigate('/login');
+      }, 2000); 
+
+      return () => clearTimeout(timeout); 
+    }
+  }, [flashData, navigate]);
 
   return (
     <>

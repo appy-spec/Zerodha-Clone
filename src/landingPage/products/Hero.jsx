@@ -11,7 +11,7 @@ function Hero() {
         <p className="fs-8 mb-5">
           Check out our{" "}
           <a href="" style={{ textDecoration: "none" }}>
-            investment offerings <i class="fa-solid fa-arrow-right"></i>
+            investment offerings <i className="fa-solid fa-arrow-right"></i>
           </a>
         </p>
       </div>

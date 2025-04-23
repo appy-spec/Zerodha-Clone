@@ -32,6 +32,24 @@ function Signup({onSubmit}) {
     }
   }
 
+  // bootstrap script logic to validate the things
+  
+  (() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+
   return (
     <>
       <div className="container mt-4 mb-3">
@@ -39,8 +57,8 @@ function Signup({onSubmit}) {
         <h3>Signup to Zerodha !!</h3>
         <div className="row">
           <div className="col-8">
-            <form onSubmit={handleSubmit}>
-              <div  className="mb-2">
+            <form onSubmit={handleSubmit} className="needs-validation" noValidate>
+              <div className="mb-2">
                 <label htmlFor="fullname" className="form-label">Full Name:</label>
                 <input
                   className="form-control"

@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
+import {useAuth} from "../AuthContext";
 
 function Login({ onSubmit }) {
+
+  const { checkAuth } = useAuth();
+
   let [loginData, setloginData] = useState({
     email: "",
     password: "",
@@ -24,12 +28,32 @@ function Login({ onSubmit }) {
       );
 
       onSubmit(res.data);
+      checkAuth();
 
     } catch (err) {
       
       console.log(err); 
     }
   };
+
+  // bootstrap script logic to validate the things
+  
+  (() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+  
   return (
     <>
       <div className="container mt-4 mb-3">
@@ -37,7 +61,7 @@ function Login({ onSubmit }) {
           <h3>Login to Zerodha !!</h3>
           <div className="row">
             <div className="col-8">
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} className="needs-validation" noValidate>
                 <div className="mb-2">
                   <label htmlFor="email" className="form-label">
                     Email:
