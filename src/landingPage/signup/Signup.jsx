@@ -18,23 +18,9 @@ function Signup({onSubmit}) {
     setFromData({...formData, [fieldName]:fieldVal});
   }
 
-  const handleSubmit=async (event)=>{
-
-    event.preventDefault();
-    try {
-
-      let res=await axios.post("http://localhost:3000/signup", {formData});
-      onSubmit(res.data);
-
-    } catch (err) {
-
-      console.log(err);
-    }
-  }
-
   // bootstrap script logic to validate the things
   
-  (() => {
+  const validate=() => {
     'use strict'
     const forms = document.querySelectorAll('.needs-validation')
   
@@ -48,8 +34,22 @@ function Signup({onSubmit}) {
         form.classList.add('was-validated')
       }, false)
     })
-  })()
+  };
 
+  const handleSubmit=async (event)=>{
+
+   event.preventDefault();
+    try {
+
+      let res=await axios.post("http://localhost:3000/signup", {formData});
+      onSubmit(res.data);
+
+    } catch (err) {
+
+      console.log(err);
+    }
+  }
+  
   return (
     <>
       <div className="container mt-4 mb-3">
@@ -97,7 +97,7 @@ function Signup({onSubmit}) {
                   required
                 />
               </div>
-              <button type="submit" className="btn btn-primary">Submit</button>
+              <button type="submit" className="btn btn-primary" onClick={()=>{validate()}}>Submit</button>
             </form>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from "./AuthContext";
 
 function Navbar() {
-  const { user, logout, checkAuth, showNavbarFooter} = useAuth();
+  const { user, logout, checkAuth} = useAuth();
   let userid=user?.userid;
   let [showLogout, setLogOut] = useState(false);
 
@@ -53,7 +53,6 @@ function Navbar() {
                     className="nav-link active"
                     aria-current="page"
                     to={`/mystocks/${userid}`}
-                    onClick={()=>{showNavbarFooter()}}
                   >
                     MyStocks
                   </Link>

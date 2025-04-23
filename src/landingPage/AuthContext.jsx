@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import axios from "axios";
 
 const AuthContext = createContext();
@@ -7,8 +7,6 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   
-  const[navbarFooter, setNavbarFooter]=useState(false);
-
   const checkAuth = async () => {
     try {
       const res = await axios.get("http://localhost:3000/user/verify", {
@@ -35,13 +33,8 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
   };
 
-  const showNavbarFooter=()=>{
-
-    setNavbarFooter(!navbarFooter);
-  }
-
   return (
-    <AuthContext.Provider value={{ user, loading, logout, checkAuth, navbarFooter, showNavbarFooter }}>
+    <AuthContext.Provider value={{ user, loading, logout, checkAuth }}>
       {children}
     </AuthContext.Provider>
   );

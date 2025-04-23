@@ -10,7 +10,7 @@ function SignupParent() {
   const navigate = useNavigate();
   
   const handleFlashContent = (data) => {
-    
+
     setFlashData({...data, id:Date.now()});
   };
 

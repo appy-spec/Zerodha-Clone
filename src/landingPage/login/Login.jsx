@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import {useAuth} from "../AuthContext";
+import { useAuth } from "../AuthContext";
 
 function Login({ onSubmit }) {
-
   const { checkAuth } = useAuth();
 
   let [loginData, setloginData] = useState({
@@ -17,10 +16,32 @@ function Login({ onSubmit }) {
     setloginData({ ...loginData, [fieldName]: fieldVal });
   };
 
+  // bootstrap script logic to validate the things
+
+  const validate=() => {
+    "use strict";
+    const forms = document.querySelectorAll(".needs-validation");
+
+    Array.from(forms).forEach((form) => {
+      form.addEventListener(
+        "submit",
+        (event) => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+
+          form.classList.add("was-validated");
+        },
+        false
+      );
+    });
+  };
+
   const handleSubmit = async (event) => {
+    
     event.preventDefault();
     try {
-
       let res = await axios.post(
         "http://localhost:3000/login",
         { loginData },
@@ -29,31 +50,11 @@ function Login({ onSubmit }) {
 
       onSubmit(res.data);
       checkAuth();
-
     } catch (err) {
-      
-      console.log(err); 
+      console.log(err);
     }
   };
 
-  // bootstrap script logic to validate the things
-  
-  (() => {
-    'use strict'
-    const forms = document.querySelectorAll('.needs-validation')
-  
-    Array.from(forms).forEach(form => {
-      form.addEventListener('submit', event => {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-  
-        form.classList.add('was-validated')
-      }, false)
-    })
-  })()
-  
   return (
     <>
       <div className="container mt-4 mb-3">
@@ -61,7 +62,11 @@ function Login({ onSubmit }) {
           <h3>Login to Zerodha !!</h3>
           <div className="row">
             <div className="col-8">
-              <form onSubmit={handleSubmit} className="needs-validation" noValidate>
+              <form
+                onSubmit={handleSubmit}
+                className="needs-validation"
+                noValidate
+              >
                 <div className="mb-2">
                   <label htmlFor="email" className="form-label">
                     Email:
@@ -92,7 +97,7 @@ function Login({ onSubmit }) {
                     required
                   />
                 </div>
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="btn btn-primary" onClick={()=>{validate()}}>
                   Login
                 </button>
               </form>

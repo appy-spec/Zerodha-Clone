@@ -16,7 +16,7 @@ function ShowFlash({ flashData }) {
   return (
     <>
       {flashData.type === "error" ? (
-        <div className="container mt-3">
+        <div className="container mt-4">
           <div className="row">
             <div
               className={`alert alert-danger col-6 offset-3 d-flex justify-content-between align-items-center`}
@@ -33,7 +33,7 @@ function ShowFlash({ flashData }) {
           </div>
         </div>
       ) : (
-        <div className="container mt-3">
+        <div className="container mt-4">
           <div className="row">
             <div
               className={`alert alert-success col-6 offset-3 d-flex justify-content-between align-items-center`}

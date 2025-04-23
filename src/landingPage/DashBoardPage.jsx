@@ -1,10 +1,11 @@
 import React from "react";
 import {useAuth} from "./AuthContext";
 
-const DashboardPage = () => {
+const DashboardPage = ({func}) => {
     
   const{user}=useAuth();
   let userid=user?.userid;
+  func(true);
   
   return (
     <div style={{ height: "100vh" }}>
