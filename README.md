@@ -2,7 +2,6 @@
 
 A full-stack Zerodha-inspired stock trading platform clone, built with **ReactJS + Vite** on the frontend and **Express.js** on the backend. It supports user **authentication (login/signup)** and includes several key features such as a dashboard, homepage, product page, holdings, and orders.
 
-
 ## Set Instructions
 
 Before running the project, make sure you have the following installed:
@@ -13,7 +12,6 @@ Before running the project, make sure you have the following installed:
 
 You will also need to create a `.env` file for the backend with your own secrets.
 
-
 ## 🖼️ Screenshots
 
 ### Home Page  
@@ -21,6 +19,9 @@ You will also need to create a `.env` file for the backend with your own secrets
 
 ### Support Page  
 ![Login Page](ScreenShorts/supportPage.png)
+
+### Product Page  
+![Login Page](ScreenShorts/productPage.png)
 
 ### Signup Page  
 ![Login Page](ScreenShorts/signupPage.png)
@@ -35,7 +36,6 @@ You will also need to create a `.env` file for the backend with your own secrets
 ![Orders Page](ScreenShorts/orderPage.png)
 
 For more Screenshorts please visit ScreenShorts folder of the project
----
 
 ## Tech Stack
 
@@ -50,8 +50,6 @@ For more Screenshorts please visit ScreenShorts folder of the project
 - **JWT** for authentication
 - **bcrypt** for password hashing
 - **MongoDB** (via Mongoose)
-
----
 
 ## ✨ Some Key Features are ----
 
@@ -72,5 +70,4 @@ For more Screenshorts please visit ScreenShorts folder of the project
 - **Orders** – View and manage order history
 - **Positions** - Contains the overall idea of your stocks
 
----
 
