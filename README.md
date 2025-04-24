@@ -39,17 +39,14 @@ For more Screenshorts please visit ScreenShorts folder of the project
 
 ## Tech Stack
 
-### Frontend 
-- **ReactJS** (with Vite)
-- **React Router** for navigation
-- **Axios** for API calls
-- **CSS** / CSS Modules (for styling)
+### Frontend and Backend
 
-### Backend 
-- **Node.js** + **Express**
-- **JWT** for authentication
-- **bcrypt** for password hashing
-- **MongoDB** (via Mongoose)
+| **Frontend**                       | **Backend**                           |
+|------------------------------------|---------------------------------------|
+| **ReactJS** (with Vite)            | **Node.js** + **Express**             |
+| **React Router** for navigation    | **JWT** for authentication            |
+| **Axios** for API calls            | **bcrypt** for password hashing       |
+| **CSS** / CSS Modules for styling  | **MongoDB** (via Mongoose)            |
 
 ## ✨ Some Key Features are ----
 
