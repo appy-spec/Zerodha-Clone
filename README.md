@@ -21,7 +21,7 @@ You will also need to create a `.env` file for the backend with your own secrets
 ![Login Page](https://via.placeholder.com/800x400.png?text=Login+Page)
 
 ### Dashboard  
-![Dashboard](https://via.placeholder.com/800x400.png?text=Dashboard)
+![Dashboard](ScreenShorts/dashboard.png)
 
 ### Holdings Page  
 ![Holdings Page](https://via.placeholder.com/800x400.png?text=Holdings+Page)
