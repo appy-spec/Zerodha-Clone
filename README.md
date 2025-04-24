@@ -12,7 +12,7 @@ Before running the project, make sure you have the following installed:
 
 You will also need to create a `.env` file for the backend with your own secrets.
 
-## 🖼️ Screenshots
+## 🖼️ Screenshots of projects
 
 ### Home Page  
 ![Login Page](ScreenShorts/homePage.png)
@@ -26,7 +26,7 @@ You will also need to create a `.env` file for the backend with your own secrets
 ### Signup Page  
 ![Login Page](ScreenShorts/signupPage.png)
 
-### Dashboard  
+### Dashboard Page
 ![Dashboard](ScreenShorts/dashboard.png)
 
 ### Holdings Page  
