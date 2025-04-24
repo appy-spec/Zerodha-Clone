@@ -1,9 +1,9 @@
-# 💸 Zerodha Clone
+# Zerodha Clone
 
 A full-stack Zerodha-inspired stock trading platform clone, built with **ReactJS + Vite** on the frontend and **Express.js** on the backend. It supports user **authentication (login/signup)** and includes several key features such as a dashboard, homepage, product page, holdings, and orders.
 
 ---
-## 📦 Set Instructions
+## Set Instructions
 
 Before running the project, make sure you have the following installed:
 
@@ -17,29 +17,29 @@ You will also need to create a `.env` file for the backend with your own secrets
 
 ## 🖼️ Screenshots
 
-### 🔐 Login Page  
+### Login Page  
 ![Login Page](https://via.placeholder.com/800x400.png?text=Login+Page)
 
-### 📊 Dashboard  
+### Dashboard  
 ![Dashboard](https://via.placeholder.com/800x400.png?text=Dashboard)
 
-### 💼 Holdings Page  
+### Holdings Page  
 ![Holdings Page](https://via.placeholder.com/800x400.png?text=Holdings+Page)
 
-### 📄 Orders Page  
+### Orders Page  
 ![Orders Page](https://via.placeholder.com/800x400.png?text=Orders+Page)
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
-### Frontend 🖥️
+### Frontend 
 - **ReactJS** (with Vite)
 - **React Router** for navigation
 - **Axios** for API calls
 - **CSS** / CSS Modules (for styling)
 
-### Backend 🧠
+### Backend 
 - **Node.js** + **Express**
 - **JWT** for authentication
 - **bcrypt** for password hashing
@@ -49,19 +49,22 @@ You will also need to create a `.env` file for the backend with your own secrets
 
 ## ✨Some Key Features are----
 
-### ✅ Public Pages
+### Public Pages
 - **Homepage** – Landing page introducing the platform
 - **Product Page** – Highlights features and services
+- **Support Page** - Helpfull for getting the support
+- **About Page** - To know more about the developer
 
-### 🔐 Auth System
+### Auth System
 - **Sign Up** – Create account with email & password
 - **Login** – Secure login with JWT stored in HTTP-only cookies
 - **Logout** – Clear session securely
 
-### 👤 Authenticated User Pages
+### Authenticated User Pages
 - **Dashboard** – Overview after login
 - **Holdings** – View your current stock holdings
 - **Orders** – View and manage order history
+- **Positions** - Contains the overall idea of your stocks
 
 ---
 
