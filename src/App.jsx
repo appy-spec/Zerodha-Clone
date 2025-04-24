@@ -28,6 +28,7 @@ function App() {
 
     window.addEventListener("message", handleMessage);
     return () => window.removeEventListener("message", handleMessage);
+
   }, []);
 
   return (
@@ -63,7 +64,7 @@ function App() {
           <Route path="/signup" element={<SignupParent />} />
           <Route path="/login" element={<LoginParent />} />
           <Route
-            path="/mystocks/:id"
+            path="/mystocks"
             element={<DashboardPage func={setHideNavFooter} />}
           />
           <Route path="*" element={<NotFound />} />

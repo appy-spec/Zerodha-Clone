@@ -19,8 +19,8 @@ function LeftSectrion({
           <h1 className="mb-3">{productName}</h1>
           <p>{productDescription}</p>
           <div>
-            <a href={tryDemo} style={{ textDecoration: "none" }}>Try Demo <i class="fa-solid fa-arrow-right"></i></a>
-            <a href={learnMore} style={{marginLeft:"45px", textDecoration:"none"}}>Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            <a href={tryDemo} style={{ textDecoration: "none" }}>Try Demo <i className="fa-solid fa-arrow-right"></i></a>
+            <a href={learnMore} style={{marginLeft:"45px", textDecoration:"none"}}>Learn More <i className="fa-solid fa-arrow-right"></i></a>
           </div>
           <div className="mt-3">
             <a href={goolePlay}>

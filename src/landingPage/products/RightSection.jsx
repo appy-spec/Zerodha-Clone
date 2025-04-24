@@ -14,7 +14,7 @@ function RightSection({
           <p>{productDescription}</p>
           <div>
             <a href="" style={{ textDecoration: "none" }}>
-              {link} <i class="fa-solid fa-arrow-right"></i>
+              {link} <i className="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>

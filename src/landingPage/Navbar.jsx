@@ -4,7 +4,6 @@ import { useAuth } from "./AuthContext";
 
 function Navbar() {
   const { user, logout, checkAuth} = useAuth();
-  let userid=user?.userid;
   let [showLogout, setLogOut] = useState(false);
 
   useEffect(() => {
@@ -52,7 +51,7 @@ function Navbar() {
                   <Link
                     className="nav-link active"
                     aria-current="page"
-                    to={`/mystocks/${userid}`}
+                    to={`/mystocks`}
                   >
                     MyStocks
                   </Link>

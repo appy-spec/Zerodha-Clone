@@ -118,7 +118,7 @@ function Footer() {
             information of your transactions directly from Exchange on your
             mobile/email at the end of the day. Issued in the interest of
             investors. KYC is one time exercise while dealing in securities
-            markets - once KYC is done through a SEBI registered intermediary
+            markets - once KYC is className through a SEBI registered intermediary
             (broker, DP, Mutual Fund etc.), you need not undergo the same
             process again when you approach another intermediary." Dear
             Investor, if you are subscribing to an IPO, there is no need to

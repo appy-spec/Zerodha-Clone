@@ -9,7 +9,7 @@ function OpenAccount() {
         Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.
         </p>
         <button
-          class="btn btn-primary fs-5"
+          className="btn btn-primary fs-5"
           style={{ width: "18%", margin: "0 auto" }}
         >
           Signup Now for free
