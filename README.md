@@ -17,18 +17,25 @@ You will also need to create a `.env` file for the backend with your own secrets
 
 ## 🖼️ Screenshots
 
-### Login Page  
-![Login Page](https://via.placeholder.com/800x400.png?text=Login+Page)
+### Home Page  
+![Login Page](ScreenShorts/homePage.png)
+
+### Support Page  
+![Login Page](ScreenShorts/supportPage.png)
+
+### Signup Page  
+![Login Page](ScreenShorts/signupPage.png)
 
 ### Dashboard  
 ![Dashboard](ScreenShorts/dashboard.png)
 
 ### Holdings Page  
-![Holdings Page](https://via.placeholder.com/800x400.png?text=Holdings+Page)
+![Holdings Page](ScreenShorts/holdingPage.png)
 
 ### Orders Page  
-![Orders Page](https://via.placeholder.com/800x400.png?text=Orders+Page)
+![Orders Page](ScreenShorts/orderPage.png)
 
+For more Screenshorts please visit ScreenShorts folder of the project
 ---
 
 ## Tech Stack
@@ -47,7 +54,7 @@ You will also need to create a `.env` file for the backend with your own secrets
 
 ---
 
-## ✨Some Key Features are----
+## ✨ Some Key Features are ----
 
 ### Public Pages
 - **Homepage** – Landing page introducing the platform
